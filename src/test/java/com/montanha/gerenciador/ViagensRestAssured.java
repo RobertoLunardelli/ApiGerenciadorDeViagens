@@ -1,102 +1,76 @@
 package com.montanha.gerenciador;
+
 import Utils.BaseApi;
+import Utils.Dados;
+import Utils.LoginAdm;
+import Utils.LoginUsuario;
 import io.restassured.http.ContentType;
 import org.apache.http.HttpStatus;
+
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
+
 import static io.restassured.RestAssured.*;
 
 public class ViagensRestAssured extends BaseApi {
 
-    public String gerarTokenUsuario(){
-        String tokenUsuario =
-                given()
-                        .body("{\n"+
-                                " \"email\": \"usuario@email.com\",\n" +
-                                " \"senha\": \"123456\"\n" + "}")
-                        .contentType(ContentType.JSON)
-                        .when()
-                        .post("v1/auth")
-                        .then().extract().path("data.token");
-        return tokenUsuario;
-    }
-
-    public String gerarTokenAdmin(){
-        String tokenAdmin =
-                given()
-                .body("{\n"+
-                        " \"email\": \"admin@email.com\",\n" +
-                        " \"senha\": \"654321\"\n" + "}")
+    String gerarTokenAdmin = new LoginAdm().gerarTokenAdmin();
+    String gerarTokenUsuario = new LoginUsuario().gerarTokenUsuario();
+    Dados dados = new Dados();
+    @Test
+    public void cadastrarViagemUsandoTokenAdmin() {
+        given()
+                .header("Authorization", gerarTokenAdmin)
+                .body(dados.cadastrarViagem())
                 .contentType(ContentType.JSON)
                 .when()
-                .post("v1/auth")
-                .then().extract().path("data.token");
-        return tokenAdmin;
-    }
-    @Test
-    public void cadastrarViagemUsandoTokenAdmin(){
-        given()
-                .header("Authorization", gerarTokenAdmin())
-                .body("{\n"+
-                        " \"acompanhante\": \"Roberto\",\n" +
-                        " \"dataPartida\": \"2021-08-04\",\n" +
-                        " \"dataRetorno\": \"2021-08-10\",\n" +
-                        " \"localDeDestino\": \"Porto Alegre\",\n" +
-                        " \"regiao\": \"Sul\"\n" + "}")
-                .contentType(ContentType.JSON)
-        .when()
                 .post("v1/viagens")
-        .then()
+                .then()
                 .statusCode(HttpStatus.SC_CREATED)
                 .log().all()
-                .body(containsString("2021-08-04"))
+                .body(containsString("2021-08-11"))
                 .body(is(notNullValue()));
-                Assert.assertThat("Roberto",Matchers.is("Roberto"));
-                Assert.assertThat("Sul",Matchers.is("Sul"));
-
     }
+
     @Test
-    public void visualizarViagensCadastradas(){
+    public void visualizarViagensCadastradas() {
         given()
-                .header("Authorization",gerarTokenUsuario())
+                .header("Authorization", gerarTokenUsuario)
                 .contentType(ContentType.JSON)
-        .when()
+                .when()
                 .get("v1/viagens")
-        .then()
+                .then()
                 .statusCode(HttpStatus.SC_OK)
                 .body(is(notNullValue()))
                 .log().all();
     }
+
     @Test
-    public void atualizarDadosDeViagemCadastrada(){
+    public void atualizarDadosDeViagemCadastrada() {
         given()
-                .header("Authorization",gerarTokenAdmin())
-                .body("{\n"+
-                        " \"acompanhante\": \"Pedro\",\n" +
-                        " \"dataPartida\": \"2021-08-04\",\n" +
-                        " \"dataRetorno\": \"2021-08-10\",\n" +
-                        " \"localDeDestino\": \"Porto Alegre\",\n" +
-                        " \"regiao\": \"Sul\"\n" + "}")
+                .header("Authorization", gerarTokenAdmin)
+                .body(dados.alterarViagem())
                 .contentType(ContentType.JSON)
-        .when()
+                .when()
                 .put("v1/viagens/1")
-        .then()
+                .then()
                 .statusCode(HttpStatus.SC_NO_CONTENT)
                 .body(is(notNullValue()))
                 .log().all();
     }
+
     @Test
-    public void deletarCadastroDeViagem(){
+    public void deletarCadastroDeViagem() {
         given()
-                .header("Authorization",gerarTokenAdmin())
+                .header("Authorization", gerarTokenAdmin)
                 .contentType(ContentType.JSON)
-        .when()
+                .when()
                 .delete("v1/viagens/4")
-        .then()
+                .then()
                 .statusCode(HttpStatus.SC_NO_CONTENT)
                 .body(is(notNullValue()))
                 .log().all();
