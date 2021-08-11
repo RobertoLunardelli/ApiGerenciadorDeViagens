@@ -6,9 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a17b3e8c-ae37-4713-953d-513e11a6c214" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/test/java/Utils/BaseApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/Joao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/Dados.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/LoginAdm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/LoginUsuario.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/GerenciadorViagensMontanhaApplicationTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/ViagensRestAssured.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/montanha/gerenciador/ViagensRestAssured.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/montanha/gerenciador/ViagensRestAssured.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +38,9 @@
     </ignored-facets>
   </component>
   <component name="ProjectId" id="1vuVAwsUjGLcY0H8rNXo3k2Tdby" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,7 +66,7 @@
       <command value="mvn spring-boot:run" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ViagensRestAssured.deletarCadastroDeViagem">
+  <component name="RunManager" selected="JUnit.ViagensRestAssured.cadastrarViagemUsandoTokenAdmin">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -176,10 +183,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ViagensRestAssured.deletarCadastroDeViagem" />
-        <item itemvalue="JUnit.ViagensRestAssured.atualizarDadosDeViagemCadastrada" />
         <item itemvalue="JUnit.ViagensRestAssured.cadastrarViagemUsandoTokenAdmin" />
         <item itemvalue="JUnit.ViagensRestAssured.visualizarViagensCadastradas" />
+        <item itemvalue="JUnit.ViagensRestAssured.atualizarDadosDeViagemCadastrada" />
+        <item itemvalue="JUnit.ViagensRestAssured.deletarCadastroDeViagem" />
         <item itemvalue="JUnit.ViagensRestAssured.cadastrarTokenAdmin" />
       </list>
     </recent_temporary>
