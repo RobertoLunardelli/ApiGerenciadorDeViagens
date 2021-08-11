@@ -32,4 +32,7 @@ public class Dados {
 
         return params;
     }
+    public void teste(){
+        int teste = 1;
+    }
 }
