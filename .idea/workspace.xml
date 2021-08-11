@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a17b3e8c-ae37-4713-953d-513e11a6c214" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/BaseApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/Joao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/GerenciadorViagensMontanhaApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/ViagensRestAssured.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/test/java" />
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="gerenciador-viagens-montanha/invalid/JPA" />
+      <facet id="gerenciador-viagens-montanha/invalid/Spring" />
+      <facet id="gerenciador-viagens-montanha/invalid/Web" />
+    </ignored-facets>
+  </component>
+  <component name="ProjectId" id="1vuVAwsUjGLcY0H8rNXo3k2Tdby" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn spring-bootrun" />
+      <command value="mvn clear install" />
+      <command value="mvn install" />
+      <command value="mvn clean install" />
+      <command value="mvn spring-boot:run" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ViagensRestAssured.deletarCadastroDeViagem">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ViagensRestAssured.atualizarDadosDeViagemCadastrada" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gerenciador-viagens-montanha" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.ViagensRestAssured" />
+      <option name="METHOD_NAME" value="atualizarDadosDeViagemCadastrada" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ViagensRestAssured.cadastrarTokenAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gerenciador-viagens-montanha" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.ViagensRestAssured" />
+      <option name="METHOD_NAME" value="cadastrarTokenAdmin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ViagensRestAssured.cadastrarViagemUsandoTokenAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gerenciador-viagens-montanha" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.ViagensRestAssured" />
+      <option name="METHOD_NAME" value="cadastrarViagemUsandoTokenAdmin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ViagensRestAssured.deletarCadastroDeViagem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gerenciador-viagens-montanha" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.ViagensRestAssured" />
+      <option name="METHOD_NAME" value="deletarCadastroDeViagem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ViagensRestAssured.visualizarViagensCadastradas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gerenciador-viagens-montanha" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.ViagensRestAssured" />
+      <option name="METHOD_NAME" value="visualizarViagensCadastradas" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gerenciador-viagens-montanha" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ViagensRestAssured.deletarCadastroDeViagem" />
+        <item itemvalue="JUnit.ViagensRestAssured.atualizarDadosDeViagemCadastrada" />
+        <item itemvalue="JUnit.ViagensRestAssured.cadastrarViagemUsandoTokenAdmin" />
+        <item itemvalue="JUnit.ViagensRestAssured.visualizarViagensCadastradas" />
+        <item itemvalue="JUnit.ViagensRestAssured.cadastrarTokenAdmin" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a17b3e8c-ae37-4713-953d-513e11a6c214" name="Default Changelist" comment="" />
+      <created>1627411826376</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627411826376</updated>
+      <workItem from="1627411828544" duration="723000" />
+      <workItem from="1627412569530" duration="44000" />
+      <workItem from="1627412631100" duration="147000" />
+      <workItem from="1627412816372" duration="839000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
