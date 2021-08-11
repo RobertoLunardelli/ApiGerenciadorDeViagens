@@ -11,7 +11,10 @@
       <change afterPath="$PROJECT_DIR$/src/test/java/Utils/LoginUsuario.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/GerenciadorViagensMontanhaApplicationTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/ViagensRestAssured.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/montanha/gerenciador/ViagensRestAssured.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/montanha/gerenciador/ViagensRestAssured.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

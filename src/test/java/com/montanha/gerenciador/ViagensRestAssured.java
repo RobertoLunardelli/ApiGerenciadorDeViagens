@@ -6,14 +6,11 @@ import Utils.LoginAdm;
 import Utils.LoginUsuario;
 import io.restassured.http.ContentType;
 import org.apache.http.HttpStatus;
-
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
-
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
-
 import static io.restassured.RestAssured.*;
 
 public class ViagensRestAssured extends BaseApi {
@@ -31,9 +28,10 @@ public class ViagensRestAssured extends BaseApi {
                 .post("v1/viagens")
                 .then()
                 .statusCode(HttpStatus.SC_CREATED)
-                .log().all()
-                .body(containsString("2021-08-11"))
-                .body(is(notNullValue()));
+                .body(is(notNullValue()))
+                .body(containsString(dados.getNome()))
+                .log().all();
+
     }
 
     @Test
@@ -53,7 +51,7 @@ public class ViagensRestAssured extends BaseApi {
     public void atualizarDadosDeViagemCadastrada() {
         given()
                 .header("Authorization", gerarTokenAdmin)
-                .body(dados.alterarViagem())
+                .body(dados.cadastrarViagem())
                 .contentType(ContentType.JSON)
                 .when()
                 .put("v1/viagens/1")
